@@ -1,12 +1,12 @@
 {
-  "name": "hermesdj/seat-mining-scan-parser",
-  "description": "A simple tool to parse mining scan and evaluate the value of a belt",
+  "name": "capsulecmdr/seat-mining-scan-parser",
+  "description": "A simple tool to parse mining scan and evaluate the value of a belt FORK:hermesdj",
   "license": "GPL-3.0",
   "type": "seat-plugin",
   "authors": [
     {
-      "name": "Jay's",
-      "email": "jays.gaming.contact@gmail.com"
+      "name": "Orsiki",
+      "email": "jwlittle13@gmail.com"
     }
   ],
   "autoload": {
