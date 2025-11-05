@@ -7,7 +7,7 @@ use Seat\Eveapi\Models\Sde\InvType;
 
 class MineralScanParser extends Parser
 {
-    protected const BIG_NUMBER_REGEXP = "(?:\d+(?:[’\s+,]\d\d\d)*(?:\.\d\d)?)";
+    public const BIG_NUMBER_REGEXP = "(?:\d+(?:[’\s+,]\d\d\d)*(?:\.\d\d)?)";
 
     public static function parse(string $text, string $EveItemClass): ?MineralScanParseResult
     {
@@ -78,7 +78,7 @@ class MineralScanParser extends Parser
         return $result;
     }
 
-    protected static function parseBigNumber($number): ?float
+    public static function parseBigNumber($number): ?float
     {
         if ($number === null) return null;
         return floatval(str_replace(["’", " ", ','], "", $number));
